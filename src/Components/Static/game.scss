@@ -1,0 +1,54 @@
+.game {
+    display: flex;
+    font-size: 55px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    width: 35%;
+
+    div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+
+        &.divider {
+            font-size: 35px;
+            color: goldenrod;
+        }
+    }
+
+    &.result {
+        flex-direction: column;
+        .title {
+            color: white;
+        }
+        .subtitle {
+            color: goldenrod;
+            font-size: xx-large;
+            .winnings {
+                color: white;
+                padding-left: 10px;
+            }
+        }
+
+        &.win {
+            .title {
+                color: lightgreen;
+            }
+        }
+
+        &.lose {
+            .title {
+                color: red;
+            }
+        }
+    }
+}
+.message {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    color: goldenrod;
+    font-weight: bold;
+}

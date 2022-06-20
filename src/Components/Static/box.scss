@@ -1,0 +1,57 @@
+.box {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: xx-large;
+    position: relative;
+    cursor: pointer;
+
+    &.Rock {
+        color: dodgerblue;
+        background-color: darkblue;
+        border: 3px solid dodgerblue;
+    }
+
+    &.Scissors {
+        color: red;
+        background-color: darkred;
+        border: 3px solid red;
+    }
+
+    &.Paper {
+        color: lightgreen;
+        background-color: darkgreen;
+        border: 3px solid lightgreen;
+    }
+
+    &.win {
+        border: 5px solid lightgreen;
+    }
+
+    .chip {
+        width: 40px;
+        height: 40px;
+        background: white;
+        border: 5px solid blue;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-weight: normal;
+        font-size: 20px;
+        position: absolute;
+        bottom: 50%;
+    }
+
+    .name {
+        position: absolute;
+        bottom: 20px;
+    }
+}

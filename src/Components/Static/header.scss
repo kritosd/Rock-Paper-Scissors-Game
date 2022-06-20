@@ -1,0 +1,30 @@
+.headerContainer {
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .header {
+        display: flex;
+        align-self: center;
+        width: 20%;
+        justify-content: space-evenly;
+        font-size: 20px;
+        color: white;
+
+        .balance, .bet, .wins {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+
+            .title {
+                color: goldenrod;
+            }
+
+            span {
+                padding: 5px;
+            }
+        }
+    }
+}
